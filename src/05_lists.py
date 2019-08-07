@@ -1,13 +1,13 @@
-p = []
+# p = []
 
-q = [10, 60, 20, 5]
+# q = [10, 60, 20, 5]
 
-p.append(77)
-print(p)
+# p.append(77)
+# print(p)
 
-for element in q:
-    print(element)
-    print ("for loop is done")
+# for element in q:
+#     print(element)
+#     print ("for loop is done")
 # For the exercise, look up the methods and functions that are available for use
 # with Python lists.
 
@@ -18,22 +18,29 @@ y = [8, 9, 10]
 
 # Change x so that it is [1, 2, 3, 4]
 # YOUR CODE HERE 
+x.append(4)
 print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE 
+x.extend(y)
 print(x)
-
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE 
+# print(x)
+del x[4]
 print(x)
-
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE 
+# print(x)
+x.insert(5, 99)
 print(x)
-
 # Print the length of list x
 # YOUR CODE HERE 
+print(len(x))
 
 # Print all the values in x multiplied by 1000
-# YOUR CODE HERE
+# YOUR CODE HER
+# E
+x.append(x * 1000)
+print(x)
