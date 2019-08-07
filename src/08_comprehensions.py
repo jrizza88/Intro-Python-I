@@ -7,7 +7,42 @@ the list should be populated.
 Take a look at https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 for more info regarding list comprehensions.
 """
+numbers = [1,2,3,4,5]
 
+q = [10, 30, 1]
+print(numbers)
+
+squares = []
+
+squares = [num*num for num in numbers]
+
+print(squares)
+
+evens = []
+
+for num in numbers:
+    if  num % 2 == 0:
+        evens.append(num)
+print(evens)
+
+# one line version
+evens2 = [num for num in numbers if num % 2 == 0]
+print(evens2)
+
+
+names = ["foo", "bar", "baz", "Sam", "Semira", "sal", "salmon"]
+
+# s_names = [name for name in names if name[0] == 's' or name[0] == 'S']
+s_names = [name.capitalize() for name in names if name[0].lower() == 's']
+print(s_names)
+# for (index, element) in enumerate(q):
+#     print(f'{index}: {element}')
+
+# print(enumerate(q))
+# print('for loop done')
+# for num in numbers: 
+#     squares.append(num*num)
+# print(squares)
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
 y = []

@@ -13,6 +13,18 @@ data that does not need to be changed. Tuples enforce immutability
 automatically. 
 """
 
+ls = [1,2,3,4]
+tup = (1,2,3,4)
+http_error_codes = ("400", "401", "403")
+http_error_codes[2]
+ls[3] = 5
+
+for item in ls:
+    print(item)
+
+for item in tup:
+    print(item)
+
 # Example:
 
 import math

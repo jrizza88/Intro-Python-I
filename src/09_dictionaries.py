@@ -15,6 +15,18 @@ has the following keys:
  - name: a name string for this location
 """
 
+d = {}
+
+d = {'apple': 'fruit', 'cucumber': 'veggie'}
+
+print(d['apple'])
+
+for key in d:
+    print(f'{key}: {d[key]}')
+
+for key, value in d.items():
+    print(f'{key}: {value}')
+
 waypoints = [
     {
         "lat": 43,

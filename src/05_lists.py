@@ -1,3 +1,13 @@
+p = []
+
+q = [10, 60, 20, 5]
+
+p.append(77)
+print(p)
+
+for element in q:
+    print(element)
+    print ("for loop is done")
 # For the exercise, look up the methods and functions that are available for use
 # with Python lists.
 
