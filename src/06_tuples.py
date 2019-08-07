@@ -13,17 +13,17 @@ data that does not need to be changed. Tuples enforce immutability
 automatically. 
 """
 
-ls = [1,2,3,4]
-tup = (1,2,3,4)
-http_error_codes = ("400", "401", "403")
-http_error_codes[2]
-ls[3] = 5
+# ls = [1,2,3,4]
+# tup = (1,2,3,4)
+# http_error_codes = ("400", "401", "403")
+# http_error_codes[2]
+# ls[3] = 5
 
-for item in ls:
-    print(item)
+# for item in ls:
+#     print(item)
 
-for item in tup:
-    print(item)
+# for item in tup:
+#     print(item)
 
 # Example:
 
@@ -48,9 +48,13 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 
 # YOUR CODE HERE
 
+def print_tuple(x):
+    print("values: ",x)
 t = (1, 2, 5, 7, 99)
-print_tuple(t)  # Prints 1 2 5 7 99, one per line
-
+# for t in print_tuple: 
+#     print(len(print_tuple(t)))
+print_tuple(t) # Prints 1 2 5 7 99, one per line
+print('t value', print_tuple(t))
 # Declare a tuple of 1 element then print it
 u = (1)  # What needs to be added to make this work?
-print_tuple(u)
+print_tuple(u,)
