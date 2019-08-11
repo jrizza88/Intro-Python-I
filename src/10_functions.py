@@ -1,3 +1,14 @@
+# define a doubling function that passes args by value
+def double(x):
+    x = x * 2
+    return x
+# print(double(10))
+# define a doubling function that passes args by reference
+num = 10
+print(double(num))
+print(num)
+
+
 # Write a function is_even that will return true if the passed-in number is even.
 
 # YOUR CODE HERE

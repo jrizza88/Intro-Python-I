@@ -20,6 +20,7 @@ import os
 print(os.name)
 
 import platform 
+# could also just write print(os.system())
 print(platform.system())
 print(platform.release())
 #this prints the pure version name without default and date
@@ -49,3 +50,4 @@ print(dir_path)
 # YOUR CODE HERE
 import getpass
 print(getpass.getuser())
+print(os.getlogin())
