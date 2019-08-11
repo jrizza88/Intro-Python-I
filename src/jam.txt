@@ -1,0 +1,4 @@
+Jamar's favorite foods are tacos, mac&cheese, caesar salad, buffalo chicken and pizza.
+he also needs to exercise a lot to make up for it... 
+maybe even use the nutrition tracker app he helped to create ;) !
+ This is an extra line appended to the list of text!
