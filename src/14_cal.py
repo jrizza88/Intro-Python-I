@@ -22,3 +22,28 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# args = sys.args
+
+c = calendar.TextCalendar()
+today = datetime.today()
+# month = datetime.today().month
+# year = datetime.today().year
+str = c.formatmonth(today.year, today.month)
+print(str)
+
+args = sys.argv
+print(args)
+
+print("Enter a calendar input")
+y = int(input('Enter the year: '))
+m = int(input('Enter the month: '))
+if y < 0:
+  print(calendar.month(today.year,m))
+elif(m < 0 or m > 12):
+  print('You must enter months in integer format! Nothing less than 0 or more than 13!!')
+else:
+  print(calendar.month(y,m))
+  print('Usage:\ncalendar.py month [year]')
+
+
