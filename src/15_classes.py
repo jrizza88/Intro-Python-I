@@ -1,14 +1,18 @@
 # Make a class LatLon that can be passed parameters `lat` and `lon` to the
 # constructor
-
+"""This is a docstring."""
 # YOUR CODE HERE
+
+#this is like the noun (the class itself)
 class LatLon:
+    # this is like the attribute below to describe the above class(noun)
     def __init__(self, lat, lon):
         self.lat = lat 
         self.lon = lon
 
-
+# this overwrites the str (printing the object) and helps to print what we wish. see below:
     def __str__(self):
+        # this would be the method, sort of like the verb, which is an action to be carried out. 
         return ', '.join([
         f'{key}: {value}'
         for key, value in self.__dict__.items()])

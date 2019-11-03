@@ -38,12 +38,16 @@ print(args)
 print("Enter a calendar input")
 y = int(input('Enter the year: '))
 m = int(input('Enter the month: '))
-if y < 0:
-  print(calendar.month(today.year,m))
-elif(m < 0 or m > 12):
-  print('You must enter months in integer format! Nothing less than 0 or more than 13!!')
-else:
-  print(calendar.month(y,m))
-  print('Usage:\ncalendar.py month [year]')
-
+while True:
+  try:
+    if y < 0:
+      print(calendar.month(today.year,m))
+    elif(m < 0 or m > 12):
+      print('You must enter months in integer format! Nothing less than 0 or more than 13!!')
+    else:
+      print(calendar.month(y,m))
+      print('Usage:\ncalendar.py month [year]')
+  # Except not printing the designated valueerror message for some reason
+  except ValueError:
+    print('please enter choice as a number!')
 
