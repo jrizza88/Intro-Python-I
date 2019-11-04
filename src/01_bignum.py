@@ -2,5 +2,6 @@
 # (try doing the same thing in the JS console and see what it outputs)
 
 # YOUR CODE HERE
-# print(65536**2)
 print(2**65536)
+
+## prints infinity for JS
