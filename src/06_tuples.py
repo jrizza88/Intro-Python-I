@@ -41,9 +41,11 @@ t = (1, 2, 5, 7, 99)
 def print_tuple(x):
     if type(x) == int:
         print(x)
-    else:
+    else: 
         for i in x:
-            print(i)
+            print(i)  
+
+    
     
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
