@@ -22,3 +22,30 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+c = calendar.TextCalendar(calendar.SUNDAY)
+
+args = sys.argv
+
+
+month = datetime.today().month
+year = datetime.today().year
+
+
+print(args)
+
+if len(args) == 1:
+  str = c.formatmonth(year, month)
+  print(str)
+elif len(args) == 2: 
+  str = c.formatmonth(year, int(args[1]))
+  print(str)
+elif len(args) == 3:
+  str = c.formatmonth(int(args[2]), int(args[1]))
+  print(str)
+else:
+  print('please enter something valid... max of two arguments for month, year format')
+
+
+
+
